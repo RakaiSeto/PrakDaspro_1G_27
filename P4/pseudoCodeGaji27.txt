@@ -1,0 +1,16 @@
+Algoritma : Gaji27
+
+Deklarasi :
+jmlMasuk, jmlTidakMasuk, totGaji, gaji, potGaji : int
+
+Deskripsi :
+1. print "masukkan jumlah masuk"
+2. read jmlMasuk
+3. print "masukkan jumlah tidak masuk"
+4. read jmlTidakMasuk
+5. print "masukkan besaran gaji"
+6. read gaji
+7. print "masukkan besaran potongan gaji"
+8. read potGaji
+9. totGaji = (jmlMasuk * gaji) - (jmlTidakMasuk * potGaji)
+10. print totGaji
