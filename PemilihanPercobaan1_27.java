@@ -6,12 +6,8 @@ public class PemilihanPercobaan1_27 {
         try {
             System.out.println("Masukkan angka");
             int angka = input27.nextInt();
-
-            if (angka % 2 == 0) {
-                System.out.println("Angka " + angka + " adalah Genap");
-            } else {
-                System.out.println("Angka " + angka + " adalah Ganjil");
-            }
+            String result = (angka % 2 == 0) ? (result = "Genap") : (result = "Ganjil");
+                System.out.println("Angka " + angka + " adalah " + result);
         } finally {
             input27.close();
         }
