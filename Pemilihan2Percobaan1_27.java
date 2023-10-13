@@ -9,12 +9,15 @@ public class Pemilihan2Percobaan1_27 {
         tahun = sc27.nextInt();
 
         if (tahun%4 == 0) {
-            if (tahun %100 == 0) {
+            if (tahun %100 == 0 && tahun %400 != 0) {
                 System.out.println("Bukan tahun kabisat");
+                return;
             } else {
                 System.out.println("tahun kabisat");
+                return;
             }
         }
-        System.out.println("tahun kabisat");
+        System.out.println("Bukan tahun kabisat");
+        return;
     }
 }
