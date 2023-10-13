@@ -1,3 +1,4 @@
+package P6;
 import java.util.Scanner;
 
 public class Pemilihan2Percobaan2_27 {
