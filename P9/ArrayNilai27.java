@@ -10,7 +10,11 @@ public class ArrayNilai27 {
         }
 
         for (int i = 0; i < nilaiAkhir.length; i++) {
-            System.out.println("Nilai akhir ke-" + (i+1) + " : " + nilaiAkhir[i]);
+            if (nilaiAkhir[i] > 70) {
+                System.out.println("Mahasiswa ke" + (i+1) + " lulus");
+            } else {
+                System.out.println("Mahasiswa ke" + (i+1) + " tidak lulus");
+            }
         }
     }
 }
