@@ -1,4 +1,4 @@
-package P10;
+
 
 public class ArrayBilangan27 {
     public static void main(String[] args) {
