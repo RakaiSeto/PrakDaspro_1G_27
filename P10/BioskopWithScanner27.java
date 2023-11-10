@@ -37,6 +37,14 @@ public class BioskopWithScanner27 {
                         } else {
                             System.out.println("=== Nomor Kolom Tidak Tersedia ===");        
                         }
+                    } else if (penonton[baris-1][kolom-1] != null) {
+                        for (; penonton[baris-1][kolom-1] != null ;) {
+                            System.out.println("=== Kursi terisi. Masukkan kembali baris dan kolom");
+                            System.out.print("Masukkan baris : ");
+                            baris = sc27.nextInt();
+                            System.out.print("Masukkan kolom : ");
+                            kolom = sc27.nextInt();
+                        }
                     } else {
                         penonton[baris-1][kolom-1] = nama;
                    
