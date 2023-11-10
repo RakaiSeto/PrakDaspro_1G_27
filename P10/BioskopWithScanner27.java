@@ -31,13 +31,21 @@ public class BioskopWithScanner27 {
                     System.out.print("Masukkan kolom : ");
                     kolom = sc27.nextInt();
 
-                    penonton[baris-1][kolom-1] = nama;
-
-                    System.out.print("Input penonton lainnya? (Y/N) : ");
-                    next = sc27.next();
-                    if (next.equalsIgnoreCase("n")) {
-                        menu = "";
-                        continue;
+                    if (baris > penonton.length || kolom > penonton[0].length) {
+                        if (baris > penonton.length) {
+                            System.out.println("=== Nomor Baris Tidak Tersedia ===");        
+                        } else {
+                            System.out.println("=== Nomor Kolom Tidak Tersedia ===");        
+                        }
+                    } else {
+                        penonton[baris-1][kolom-1] = nama;
+                   
+                        System.out.print("Input penonton lainnya? (Y/N) : ");
+                        next = sc27.next();
+                        if (next.equalsIgnoreCase("n")) {
+                            menu = "";
+                            continue;
+                        }
                     }
                 }
             } else if (menu.equals("2")) {
