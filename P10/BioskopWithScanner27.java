@@ -59,7 +59,9 @@ public class BioskopWithScanner27 {
             } else if (menu.equals("2")) {
                 System.out.println();
                 for (int i = 0; i < penonton.length; i++) {
-                    System.out.println(String.join(", ", penonton[i]));
+                    String kursiBaris = String.join(", ", penonton[i]);
+                    kursiBaris = kursiBaris.replaceAll("null", "***")
+                    System.out.println(kursiBaris);
                 }
                 menu = "";
                 continue;
