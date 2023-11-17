@@ -20,9 +20,12 @@ public class NestedLoop_2341720135 {
         int index = 0;
         for (double[] ds : arrayKota) {
             System.out.println("Kota ke " + index);
+            int total = 0;
             for (double ds2 : ds) {
+                total += ds2;
                 System.out.print(ds2 + " ");
             }
+            System.out.println("Rata-rata : " + total/ds.length);
             System.out.println();
         }
     }
