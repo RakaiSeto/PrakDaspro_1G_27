@@ -10,7 +10,7 @@ public class ArrayDua27 {
         double total[] = {0, 0, 0, 0};
         double rata[] = {0, 0, 0, 0};
 
-        int max[] = {0, 0, 0, 0}
+        int max[] = {0, 0, 0, 0};
 
         for (int i = 0; i < data.length; i++) {
             System.out.printf("Jam %s\n", jam[i]);
@@ -85,5 +85,7 @@ public class ArrayDua27 {
         for (int i = 0; i < max.length; i++) {
             System.out.print(max[i]);
         }
+        System.out.println("-----------------");
+        System.out.printf("Data maksimal index UV : %s\n", max[3]);
     }
 }
