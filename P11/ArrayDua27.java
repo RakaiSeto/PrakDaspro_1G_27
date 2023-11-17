@@ -61,5 +61,10 @@ public class ArrayDua27 {
         System.out.println("-----------------");
         System.out.printf("Rata rata suhu: %.2f\n", rata[0]);
         System.out.printf("Persentase kelembapan terendah: %s\n", min[1]);
+        System.out.println("-----------------");
+        System.out.println("Kecepatan angin : ");
+        for (int i = 0; i < data.length; i++) {
+            System.out.print(data[i][2]);
+        }
     }
 }
