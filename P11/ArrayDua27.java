@@ -10,6 +10,8 @@ public class ArrayDua27 {
         double total[] = {0, 0, 0, 0};
         double rata[] = {0, 0, 0, 0};
 
+        int max[] = {0, 0, 0, 0}
+
         for (int i = 0; i < data.length; i++) {
             System.out.printf("Jam %s\n", jam[i]);
             for (int j = 0; j < data[0].length; j++) {
@@ -20,6 +22,9 @@ public class ArrayDua27 {
                         if (min[j] > data[i][j]) {
                             min[j] = data[i][j];
                         }
+                        if (max[j] < data[i][j]) {
+                            max[j] = data[i][j];
+                        }
                         total[j] = data[i][j];
                         break;
                     case 1:
@@ -27,6 +32,9 @@ public class ArrayDua27 {
                         data[i][j] = sc27.nextInt();
                         if (min[j] > data[i][j]) {
                             min[j] = data[i][j];
+                        }
+                        if (max[j] < data[i][j]) {
+                            max[j] = data[i][j];
                         }
                         total[j] = data[i][j];
                         break;
@@ -36,6 +44,9 @@ public class ArrayDua27 {
                         if (min[j] > data[i][j]) {
                             min[j] = data[i][j];
                         }
+                        if (max[j] < data[i][j]) {
+                            max[j] = data[i][j];
+                        }
                         total[j] = data[i][j];
                         break;
                     case 3:
@@ -43,6 +54,9 @@ public class ArrayDua27 {
                         data[i][j] = sc27.nextInt();
                         if (min[j] > data[i][j]) {
                             min[j] = data[i][j];
+                        }
+                        if (max[j] < data[i][j]) {
+                            max[j] = data[i][j];
                         }
                         total[j] = data[i][j];
                         break;
@@ -65,6 +79,11 @@ public class ArrayDua27 {
         System.out.println("Kecepatan angin : ");
         for (int i = 0; i < data.length; i++) {
             System.out.print(data[i][2]);
+        }
+        System.out.println("-----------------");
+        System.out.println("Data maksimal : ");
+        for (int i = 0; i < max.length; i++) {
+            System.out.print(max[i]);
         }
     }
 }
